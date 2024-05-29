@@ -1,1 +1,2 @@
 # BlogProject
+we have create a blog project using django where we set up django project named BlogProject and app with "blog" and cretae a model name post with title,content,author,created_at,updated_at. We have use django default login and logout and set up registered of user .Lastly we created a Create,Update,Delete,List and Detail of post with used generic class based views and made the template and Url of respective class
