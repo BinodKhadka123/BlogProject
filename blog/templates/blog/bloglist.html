@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Post List</h1>
+        <ul class="list-group">
+            {% for post in posts %}
+                <li class="list-group-item">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.content }}</p>
+                    <p><strong>Author:</strong> {{ post.author }}</p>
+                    <p><strong>Created at:</strong> {{ post.created_at }}</p>
+                    <p><strong>Updated at:</strong> {{ post.updated_at }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS (optional, only if you need Bootstrap JavaScript functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
